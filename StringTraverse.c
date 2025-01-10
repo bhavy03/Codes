@@ -36,5 +36,17 @@ int main() {
   // for (int i = 0; i < count; i++) {
   //   printf("%d ", arr[i]);
   // }
+  for (int i = 0; i < count; i++) {
+    for (int j = i + 1; j < count; j++) {
+      for (int k = j + 1; k < count; k++) {
+        int sum = 0;
+        sum = arr[i] + arr[j] + arr[k];
+        if (sum == 0 && arr[i] != arr[j] && arr[i] != arr[k] &&
+            arr[j] != arr[k]) {
+          printf("%d %d %d\n", arr[i], arr[j], arr[k]);
+        }
+      }
+    }
+  }
   return 0;
 }
