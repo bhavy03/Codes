@@ -102,6 +102,7 @@ int main()
     // printf("%d\n", n);
     // Declare pointer variable
     // int(*ptr)[3]; // it references the whole array
+    // int **str = ptr;
 
     // Assign address of val[0] to ptr.
     // We can use ptr=&val[0];(both are same)
@@ -119,6 +120,9 @@ int main()
     // If ptr is a pointer to an array, (*ptr) gives the array itself.
     // Accesses the ith element of the array obtained by (*ptr).
     // printf("%d ", ptr[i]);
+
+    // if *ptr = arr and then *str = ptr that means str points to that location where ptr points
+    // on changing ptr, str still points to the same location
 
     return 0;
 }
